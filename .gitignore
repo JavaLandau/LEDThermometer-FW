@@ -23,6 +23,12 @@
 *.out
 *.log
 **/Debug/Exe/**
+*.ninja_deps
+*.ninja_log
+*.pbd
+*.browse
+*.pbw
+*.ninja
 
 #vscode
 *.vscode
