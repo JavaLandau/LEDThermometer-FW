@@ -13,7 +13,7 @@ Structure of the firmware:
     - main.c                - main file, including initialization and main logic of the device  
     - ...  
 - Inc                       - headers of main files in Src  
-- STM32CubeF0               - submodule of CMSIS and HAL drivers from STMicroelectronics  
+- Drivers                   - CMSIS and HAL drivers from STMicroelectronics  
 - Devices                   - library of drivers for chips presented on the board of the device  
     - DS18B20               - driver for digital temperature sensor DS18B20  
     - MBI5039               - driver for SPI LED driver MBI5039  
