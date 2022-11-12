@@ -103,7 +103,7 @@
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGUseCmsisDspLib</name>
@@ -340,17 +340,14 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$</state>
                     <state>$PROJ_DIR$/../Inc</state>
                     <state>$PROJ_DIR$/../Src</state>
                     <state>$PROJ_DIR$/../GPIOfun</state>
                     <state>$PROJ_DIR$/../TIMDelay</state>
                     <state>$PROJ_DIR$/../Devices/MBI5039</state>
                     <state>$PROJ_DIR$/../Devices/DS18B20</state>
-                    <state>$PROJ_DIR$/../STM32CubeF0/Drivers/STM32F0xx_HAL_Driver/Inc</state>
-                    <state>$PROJ_DIR$/../STM32CubeF0/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy</state>
-                    <state>$PROJ_DIR$/../STM32CubeF0/Drivers/CMSIS/Device/ST/STM32F0xx/Include</state>
-                    <state>$PROJ_DIR$/../STM32CubeF0/Drivers/CMSIS/Include</state>
+                    <state>$PROJ_DIR$/../Drivers/stm32f0xx_hal_driver/Inc</state>
+                    <state>$PROJ_DIR$/../Drivers/cmsis/Include</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1087,9 +1084,6 @@
         </group>
         <group>
             <name>EWARM</name>
-            <file>
-                <name>$PROJ_DIR$\startup_stm32f030x6.s</name>
-            </file>
         </group>
         <group>
             <name>User</name>
@@ -1115,37 +1109,40 @@
         <group>
             <name>CMSIS</name>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</name>
+                <name>$PROJ_DIR$\..\Drivers\cmsis\Source\Templates\iar\startup_stm32f030x6.s</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\cmsis\Source\Templates\system_stm32f0xx.c</name>
             </file>
         </group>
         <group>
             <name>STM32F0xx_HAL_Driver</name>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_cortex.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_cortex.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_gpio.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_gpio.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rcc.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_rcc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rcc_ex.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_rcc_ex.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_spi.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_spi.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_spi_ex.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_spi_ex.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_tim.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_tim.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\STM32CubeF0\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_tim_ex.c</name>
+                <name>$PROJ_DIR$\..\Drivers\stm32f0xx_hal_driver\Src\stm32f0xx_hal_tim_ex.c</name>
             </file>
         </group>
     </group>
